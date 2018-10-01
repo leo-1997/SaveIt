@@ -69,9 +69,9 @@ e.g. typing *`help`* and pressing kbd:[Enter] will open the help window.
 
 Format: `help`
 
-=== Adding a person: `add`
+=== Adding a issue: `add`
 
-Adds a person to the address book +
+Adds a issue to the address book +
 
 Format: `add i/ISSUE_STATEMENT s/SOLUTION_LINK1 s/SOLUTION_LINK2 r/REMARK t/TAG...`
 
@@ -86,7 +86,7 @@ Examples:
 * `add i/Segment Fault s/www.example2.com t/JAVA`
 
 
-=== Listing all persons : `list`
+=== Listing all issues : `list`
 
 Shows a list of all issues in the issue bookmark according to either chronological order or frequency order. Users can also choose to list part of issues.
 
@@ -110,18 +110,18 @@ Format: `list freq`
 According to frequency order
 ====
 
-=== Editing a person : `edit`
+=== Editing a issue : `edit`
 
-Edits an existing person in the issue list. +
+Edits an existing issue in the issue list. +
 Format: `edit INDEX i/NEW_ISSUE s/NEW_SOLUTION_LINK1 s/NEW_SOLUTION_LINK2 t/TAG1 r/REMARK1​`
 
 [TIP]
 ====
 
-* Edits the person at the specified `INDEX`. The index refers to the index number shown in the displayed person list. The index *must be a positive integer* 1, 2, 3, ...
+* Edits the issue at the specified `INDEX`. The index refers to the index number shown in the displayed issue list. The index *must be a positive integer* 1, 2, 3, ...
 * At least one of the optional fields must be provided.
 * Existing values will be updated to the input values.
-* When editing tags, the existing tags of the person will be removed i.e adding of solutions is not cumulative.
+* When editing tags, the existing tags of the issue will be removed i.e adding of solutions is not cumulative.
 * You can remove all the issue solutions by typing `s/` without specifying any tags after it.
 ====
 
@@ -134,7 +134,7 @@ Examples:
 
 
 
-=== Locating persons by name: `serach`
+=== Locating issues by name: `serach`
 
 Search issue by tags, issue statement or remarks.
 Format: `search KEYWORD [MORE_KEYWORDS]`
@@ -156,9 +156,9 @@ Examples:
 * `find John` +
 Returns `john` and `John Doe`
 * `find Betsy Tim John` +
-Returns any person having names `Betsy`, `Tim`, or `John`
+Returns any issue having names `Betsy`, `Tim`, or `John`
 
-=== Deleting a person : `delete`
+=== Deleting a issue : `delete`
 
 Deletes the specified issue from the issue tracker. +
 Format: `delete INDEX`
@@ -179,7 +179,7 @@ Examples:
 * `delete 1` +
 ** Deletes the 1st issue in the results of the find command.
 
-=== Selecting a person : `select`
+=== Selecting a issue : `select`
 
 Selects the issue identified by the index number used in the displayed issue list.
 Format: `select INDEX`
